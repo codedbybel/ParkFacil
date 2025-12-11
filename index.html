@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ParkFácil - Cálculo de Estacionamento</title>
+
+    <!-- CHAMANDO O CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>ParkFácil - Cálculo de Cobrança</h2>
+
+<div class="container">
+
+    <label>Tipo de Veículo:</label>
+    <select id="veiculo">
+        <option value="carro">Carro</option>
+        <option value="moto">Moto</option>
+    </select>
+
+    <label>Horas Estacionadas:</label>
+    <input type="number" id="horas" min="1">
+
+    <label>
+        <input type="checkbox" id="mensalista"> Mensalista
+    </label>
+
+    <button onclick="calcular()">Calcular Valor</button>
+
+    <h3 id="resultado"></h3>
+
+</div>
+
+<!-- CHAMANDO O JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
